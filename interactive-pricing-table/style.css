@@ -1,72 +1,78 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f7fb;
+  font-family: Arial;
+  background: #f5f5f5;
   text-align: center;
-  padding: 40px;
 }
 
-/* Heading */
 .pricing h1 {
-  margin-bottom: 30px;
+  margin-top: 40px;
 }
 
-/* Container */
 .pricing-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
 }
 
-/* Cards */
 .card {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
+  background: #fff;
+  padding: 20px;
   width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.card:hover {
-  transform: translateY(-10px);
+.highlight {
+  border: 2px solid blue;
 }
 
-/* Price */
 .price {
   color: blue;
-  margin: 10px 0;
+  font-weight: bold;
 }
 
-/* List */
 ul {
   list-style: none;
+  padding: 0;
 }
 
 li {
   margin: 10px 0;
 }
 
-/* Button */
+/* BUTTON */
 button {
-  padding: 10px;
   background: blue;
   color: white;
   border: none;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-/* Popular */
-.popular {
-  border: 2px solid blue;
-  transform: scale(1.05);
+/* TOOLTIP */
+.tooltip {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }

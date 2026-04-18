@@ -2,51 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-<title>Pricing Table</title>
+  <title>Pricing Table</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="pricing">
-<h1>Our Pricing Plans</h1>
+  <section class="pricing">
+    <h1>Our Pricing Plans</h1>
 
-  <div class="pricing-container">
+    <div class="pricing-container">
 
-    <article class="card">
-      <h2>Basic</h2>
-      <p class="price">$10/month</p>
-      <ul>
-        <li>1 User</li>
-        <li>5GB Storage</li>
-        <li>Email Support</li>
-      </ul>
-      <button>Select Plan</button>
-    </article>
+      <!-- BASIC -->
+      <div class="card">
+        <h2>Basic</h2>
+        <p class="price">$10/month</p>
 
-    <article class="card popular">
-      <h2>Standard</h2>
-      <p class="price">$20/month</p>
-      <ul>
-        <li>5 Users</li>
-        <li>50GB Storage</li>
-        <li>Priority Support</li>
-      </ul>
-      <button>Select Plan</button>
-    </article>
+        <ul>
+          <li class="tooltip">
+            1 User
+            <span class="tooltip-text">Single user access only</span>
+          </li>
 
-    <article class="card">
-      <h2>Premium</h2>
-      <p class="price">$50/month</p>
-      <ul>
-        <li>Unlimited Users</li>
-        <li>500GB Storage</li>
-        <li>24/7 Support</li>
-      </ul>
-      <button>Select Plan</button>
-    </article>
+          <li class="tooltip">
+            5GB Storage
+            <span class="tooltip-text">Good for small projects</span>
+          </li>
 
-  </div>
-</section>
+          <li class="tooltip">
+            Email Support
+            <span class="tooltip-text">Reply within 24 hours</span>
+          </li>
+        </ul>
+
+        <button>Select Plan</button>
+      </div>
+
+      <!-- STANDARD -->
+      <div class="card highlight">
+        <h2>Standard</h2>
+        <p class="price">$20/month</p>
+
+        <ul>
+          <li class="tooltip">
+            5 Users
+            <span class="tooltip-text">Suitable for small teams</span>
+          </li>
+
+          <li class="tooltip">
+            50GB Storage
+            <span class="tooltip-text">More space for growing data</span>
+          </li>
+
+          <li class="tooltip">
+            Priority Support
+            <span class="tooltip-text">Faster support response</span>
+          </li>
+        </ul>
+
+        <button>Select Plan</button>
+      </div>
+
+      <!-- PREMIUM -->
+      <div class="card">
+        <h2>Premium</h2>
+        <p class="price">$50/month</p>
+
+        <ul>
+          <li class="tooltip">
+            Unlimited Users
+            <span class="tooltip-text">No user limit</span>
+          </li>
+
+          <li class="tooltip">
+            500GB Storage
+            <span class="tooltip-text">High storage capacity</span>
+          </li>
+
+          <li class="tooltip">
+            24/7 Support
+            <span class="tooltip-text">Support anytime</span>
+          </li>
+        </ul>
+
+        <button>Select Plan</button>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
