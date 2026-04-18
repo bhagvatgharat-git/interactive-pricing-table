@@ -1,0 +1,72 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Heading */
+.pricing h1 {
+  margin-bottom: 30px;
+}
+
+/* Container */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Price */
+.price {
+  color: blue;
+  margin: 10px 0;
+}
+
+/* List */
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+}
+
+/* Button */
+button {
+  padding: 10px;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Popular */
+.popular {
+  border: 2px solid blue;
+  transform: scale(1.05);
+}
