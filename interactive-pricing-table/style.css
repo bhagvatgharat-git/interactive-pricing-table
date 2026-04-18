@@ -76,3 +76,29 @@ button {
   visibility: visible;
   opacity: 1;
 }
+/* Expand Button */
+.expand-btn {
+  margin-top: 10px;
+  color: blue;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Hidden Content */
+.extra-info {
+  display: none;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}.extra-info {
+  display: none;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.extra-info strong {
+  color: #000;
+}
