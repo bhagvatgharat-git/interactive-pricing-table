@@ -25,3 +25,15 @@ toggle.addEventListener("change", () => {
     }
   });
 });
+const darkBtn = document.getElementById("darkModeToggle");
+
+darkBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("Plan selected successfully!");
+  });
+});
