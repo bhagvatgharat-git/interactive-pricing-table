@@ -9,13 +9,21 @@
 
   <section class="pricing">
     <h1>Our Pricing Plans</h1>
+    <div class="toggle-container">
+  <span>Monthly</span>
+  <label class="switch">
+    <input type="checkbox" id="priceToggle">
+    <span class="slider"></span>
+  </label>
+  <span>Yearly</span>
+</div>
 
     <div class="pricing-container">
 
       <!-- BASIC -->
       <div class="card">
         <h2>Basic</h2>
-        <p class="price">$10/month</p>
+        <p class="price" data-monthly="10" data-yearly="100">$10/month</p>
 
         <ul>
           <li class="tooltip">
@@ -45,7 +53,7 @@
       <!-- STANDARD -->
       <div class="card highlight">
         <h2>Standard</h2>
-        <p class="price">$20/month</p>
+       <p class="price" data-monthly="20" data-yearly="200">$20/month</p>
 
         <ul>
           <li class="tooltip">
@@ -75,7 +83,7 @@
       <!-- PREMIUM -->
       <div class="card">
         <h2>Premium</h2>
-        <p class="price">$50/month</p>
+        <p class="price" data-monthly="50" data-yearly="500">$50/month</p>
 
         <ul>
           <li class="tooltip">

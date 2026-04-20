@@ -13,3 +13,15 @@ buttons.forEach(button => {
     }
   });
 });
+const toggle = document.getElementById("priceToggle");
+const prices = document.querySelectorAll(".price");
+
+toggle.addEventListener("change", () => {
+  prices.forEach(price => {
+    if (toggle.checked) {
+      price.textContent = `$${price.dataset.yearly}/year`;
+    } else {
+      price.textContent = `$${price.dataset.monthly}/month`;
+    }
+  });
+});
