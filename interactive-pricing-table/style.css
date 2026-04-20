@@ -5,6 +5,10 @@ body {
   padding: 40px;
 }
 
+body.loaded {
+  opacity: 1;
+}
+
 .pricing h1 {
   margin-top: 40px;
 }
@@ -232,4 +236,13 @@ footer {
   margin-top: 40px;
   font-size: 14px;
   color: gray;
+}
+.card.active {
+  border: 2px solid green;
+  transform: scale(1.05);
+}
+.discount {
+  color: green;
+  font-size: 12px;
+  display: none;
 }
